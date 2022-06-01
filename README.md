@@ -1,4 +1,4 @@
-# marriage
+# wedding
 Static one-page website created to celebrate Sara and John wedding! 🎉
 
 ## Dependencies:
