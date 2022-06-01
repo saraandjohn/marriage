@@ -1,0 +1,82 @@
+/* Vars */
+:root {
+    --navbar-height: 60px;
+    --vertical-spacing: 60px;
+}
+
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* App css */
+body {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.2;
+    margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+	word-break: break-word;
+	color: #191919;
+	background-color: #fff;
+}
+section {
+    scroll-margin: calc(var(--navbar-height) + var(--vertical-spacing)/2);
+}
+/* Hero */
+.hero {
+    position: relative;
+}
+/* Navbar */
+.lbn-navbar {
+    height: var(--navbar-height);
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: var(--vertical-spacing);
+    border-bottom: 1px solid #ebebeb;
+}
+.lbn-navbar__container {
+    display: block;
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.lbn-navbar-link.active {
+    color: red;   
+}
+.lbn-navbar__container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+.lbn-navbar__container ul li {
+    display: block;
+    min-width: 200px;
+    text-align: center;
+}
