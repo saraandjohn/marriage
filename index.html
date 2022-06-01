@@ -28,7 +28,9 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300;700&display=swap" rel="stylesheet">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/app.css">
 </head>
@@ -39,23 +41,31 @@
 			<section id="hero" class="col-12 px-0">
 				<picture>
 					<source media="(max-width:575px)" srcset="https://via.placeholder.com/1080x720">
-					<img src="https://via.placeholder.com/1920x840" class="w-100" alt="Sara e John">
+					<img src="https://via.placeholder.com/1920x840" class="d-block w-100" alt="Sara e John">
 				</picture>
+				<div class="curtains-block">
+					<div class="curtains-block__left">
+						<p>Sara<br />&<br />Jonathan</p>
+					</div>
+					<div class="curtains-block__right">
+						<p>06<br />octobre<br />2022</p>
+					</div>
+				</div>
 			</section>
 			<nav id="navbar" class="navbar sticky-top lbn-navbar">
 				<div class="lbn-navbar__container">
 					<ul>
-						<li>
-							<a class="lbn-navbar-link" href="#info">Info</a>
+						<li class="lbn-navbar-link-block">
+							<a href="#info">Info</a>
 						</li>
-						<li>
-							<a class="lbn-navbar-link" href="#our-story">La nostra storia</a>
+						<li class="lbn-navbar-link-block">
+							<a href="#our-story">La nostra storia</a>
 						</li>
-						<li>
-							<a class="lbn-navbar-link" href="#play-with-us">Gioca con gli sposi</a>
+						<li class="lbn-navbar-link-block">
+							<a href="#play-with-us">Gioca con gli sposi</a>
 						</li>
-						<li>
-							<a class="lbn-navbar-link" href="#contacts">Contatti</a>
+						<li class="lbn-navbar-link-block">
+							<a href="#contacts">Contatti</a>
 						</li>
 					</ul>
 				</div>
@@ -72,6 +82,9 @@
 			<section id="contacts" class="col-12 navigation-anchor-point">
 			   <p style="height: 300px;">Contatti section</p>
 			</section>
+			<div class="col-12">
+				<!-- Back to top -->
+			</div>
 		</div>
 	</main>
 	<footer>

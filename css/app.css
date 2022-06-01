@@ -1,10 +1,23 @@
 /* Vars */
 :root {
+    --font-family-main: 'Lato', sans-serif;
+    --font-family-secondary: 'Dancing Script', cursive;
+    --theme-color-main: #191919;
+    --theme-color-secondary: #ACB38F;
     --navbar-height: 60px;
     --vertical-spacing: 60px;
 }
 
+/* Animations */
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 /* Reset */
+:root {
+    font-size: 62.5%
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,13 +37,17 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* App css */
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: var(--font-family-main);
+    font-weight: 300;
 	line-height: 1.2;
     margin: 0;
+    font-size: 1.6rem;
 	height: 100%;
 	width: 100%;
 	overflow-y: scroll;
@@ -39,16 +56,85 @@ body {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 	word-break: break-word;
-	color: #191919;
+	color: var(--theme-color-main);
 	background-color: #fff;
 }
 section {
     scroll-margin: calc(var(--navbar-height) + var(--vertical-spacing)/2);
 }
+
 /* Hero */
-.hero {
+#hero {
     position: relative;
+    overflow: hidden;
 }
+.curtains-block__left {
+    position: absolute;
+    display: block;
+    font-family: var(--font-family-secondary);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    margin: 0 auto 0 0;
+    opacity: 0;
+    animation: fade-in 1s ease .5s 1 forwards;
+}
+.curtains-block__left::before {
+    content: "";
+    position: absolute;
+    display: block;
+    font-family: var(--font-family-secondary);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-color-secondary);
+    opacity: .5;
+}
+.curtains-block__right {
+    position: absolute;
+    display: block;
+    font-family: var(--font-family-secondary);
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    margin: 0 0 0 auto;
+    opacity: 0;
+    animation: fade-in 1s ease .5s 1 forwards;
+}
+.curtains-block__right::before {
+    content: "";
+    position: absolute;
+    display: block;
+    font-family: var(--font-family-secondary);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--theme-color-secondary);
+    opacity: .5;
+}
+.curtains-block__left p {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 6vw;
+    text-align: center;
+    transform: translateY(-55%) rotate(-5deg);
+}
+.curtains-block__right p {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    font-size: 4.5vw;
+    text-align: center;
+    transform: translateY(-55%) rotate(5deg);
+}
+
 /* Navbar */
 .lbn-navbar {
     height: var(--navbar-height);
@@ -62,10 +148,27 @@ section {
     width: 100%;
     max-width: 992px;
     margin: 0 auto;
-    padding: 0 15px;
 }
-.lbn-navbar-link.active {
-    color: red;   
+.lbn-navbar-link-block {
+    position: relative;
+    user-select: none;
+}
+.lbn-navbar-link-block.active {
+    font-weight: 700;
+}
+.lbn-navbar-link-block::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 29px);
+    left: 50%;
+    height: 3px;
+    width: clamp(60px, 50%, 100px);
+    background-color: var(--theme-color-secondary);
+    transform: translateX(-50%) scaleX(0);
+    transition: transform .1s ease-in-out;
+}
+.lbn-navbar-link-block.active::after {
+    transform: translateX(-50%) scaleX(1);
 }
 .lbn-navbar__container ul {
     display: flex;
@@ -77,6 +180,22 @@ section {
 }
 .lbn-navbar__container ul li {
     display: block;
-    min-width: 200px;
+    width: 200px;
+    max-width: 25%;
     text-align: center;
+}
+.lbn-navbar__container ul li a {
+    color: var(--theme-color-main);
+    text-decoration: none;
+}
+
+/* Minor */
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: var(--theme-color-secondary);
+}
+
+::selection {
+    color: #fff;
+    background: var(--theme-color-secondary);
 }

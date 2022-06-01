@@ -13,7 +13,9 @@ const navbarHandler = () => {
   const navigationAnchorPointCollection = document.getElementsByClassName(
     "navigation-anchor-point"
   );
-  const navLinkCollection = document.getElementsByClassName("lbn-navbar-link");
+  const navLinkCollection = document.getElementsByClassName(
+    "lbn-navbar-link-block"
+  );
   let activeSectionIndex = 0;
 
   for (let i = 0; i < navigationAnchorPointCollection.length; i++) {
@@ -36,6 +38,7 @@ const scollEventsHandler = () => {
 
 // DOM Loaded events handler
 DOMLoadedEventsHandler = () => {
+  console.log("~ ᔕᗩᖇᗩ 👰💕🤵 ᒍOᑎᗩTᕼᗩᑎ ~"); // ;)
   navbarHandler();
 };
 
