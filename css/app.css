@@ -261,6 +261,39 @@ a:hover {
     font-size: var(--font-size-desktop-md);
 }
 
+/* Best moments */
+#best-moments {
+    margin-top: 85px;
+}
+.best-moments__title {
+    font-family: var(--font-family-secondary);
+    font-size: calc(var(--font-size-desktop-lg) * 1.5);
+    text-align: center;
+    margin-bottom: 25px;
+}
+#best-moments-swiper .swiper-wrapper {
+    padding: 20px 0 55px;
+}
+#best-moments-swiper .swiper-slide img {
+    transform: scale(.8);
+    transition: transform .2s ease-in-out;
+    user-select: none;
+}
+#best-moments-swiper .swiper-slide.swiper-slide-active img {
+    transform: scale(1);
+}
+#best-moments-swiper .swiper-slide .caption {
+    font-size: var(--font-size-desktop-sm);
+    text-align: center;
+    margin-top: 10px;
+}
+#best-moments-swiper .swiper-pagination-bullet {
+    background-color: var(--theme-color-secondary);
+}
+#best-moments-swiper .swiper-pagination-bullet-active {
+    background-color: var(--theme-color-secondary-dark);
+}
+
 /* Minor */
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
@@ -282,12 +315,15 @@ a:hover {
         position: relative;
         right: unset;
         margin-left: 50%;
-        margin-bottom: -50%;
+        margin-bottom: -35%;
         transform: translateX(-50%) translateY(-25%) scale(0.5);
     }
 }
 @media (max-width: 767px) {
     .lbn-navbar__container ul li a {
         font-size: var(--font-size-mobile-sm);
+    }
+    #travel-sprite-animation {
+        margin-bottom: -50%;
     }
 }

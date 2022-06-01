@@ -31,6 +31,25 @@ const navbarHandler = () => {
   navLinkCollection[activeSectionIndex].classList.add("active");
 };
 
+const initBestMomentsSwiper = () => {
+  new Swiper("#best-moments-swiper", {
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    spaceBetween: 0,
+    loop: true,
+    breakpoints: {
+      767: {
+        slidesPerView: 3,
+        spaceBetween: 35,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+};
+
 // Scroll events handler
 const scollEventsHandler = () => {
   navbarHandler();
@@ -40,6 +59,7 @@ const scollEventsHandler = () => {
 DOMLoadedEventsHandler = () => {
   console.log("~ ᔕᗩᖇᗩ 👰💕🤵 ᒍOᑎᗩTᕼᗩᑎ ~"); // ;)
   navbarHandler();
+  initBestMomentsSwiper();
 };
 
 // Scroll event
