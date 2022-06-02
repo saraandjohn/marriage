@@ -327,3 +327,8 @@ a:hover {
         margin-bottom: -50%;
     }
 }
+@media (max-width: 575px) {
+    #best-moments {
+        margin-top: -50px;
+    }
+}
