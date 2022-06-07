@@ -309,6 +309,28 @@ a:hover {
     background-color: var(--theme-color-secondary-dark);
 }
 
+/* Play with us */
+#play-with-us {
+    margin-top: 85px;
+}
+.play-with-us__title {
+    font-family: var(--font-family-secondary);
+    font-size: calc(var(--font-size-desktop-lg) * 1.5);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Contacts */
+#contacts-us {
+    margin-top: 85px;
+}
+.contacts__title {
+    font-family: var(--font-family-secondary);
+    font-size: calc(var(--font-size-desktop-lg) * 1.5);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 /* Minor */
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
@@ -362,7 +384,7 @@ a:hover {
         margin-top: 0;
     }
     .best-moments__title {
-        margin-top: 15px;
+        margin-top: 45px;
     }
 }
 @media (max-width: 575px) {
