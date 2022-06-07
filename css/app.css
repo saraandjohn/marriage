@@ -94,8 +94,6 @@ a:hover {
     height: 100%;
     width: 25%;
     margin: 0 auto 0 0;
-    opacity: 0;
-    animation: fade-in 1s ease .5s 1 forwards;
 }
 .curtains-block__left::before {
     content: "";
@@ -107,7 +105,7 @@ a:hover {
     height: 100%;
     width: 100%;
     background-color: var(--theme-color-secondary);
-    opacity: .5;
+    opacity: .85;
 }
 .curtains-block__right {
     position: absolute;
@@ -118,8 +116,6 @@ a:hover {
     height: 100%;
     width: 25%;
     margin: 0 0 0 auto;
-    opacity: 0;
-    animation: fade-in 1s ease .5s 1 forwards;
 }
 .curtains-block__right::before {
     content: "";
@@ -131,25 +127,31 @@ a:hover {
     height: 100%;
     width: 100%;
     background-color: var(--theme-color-secondary);
-    opacity: .5;
+    opacity: .85;
 }
 .curtains-block__left p {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
-    font-size: 6vw;
+    font-size: 6.5vw;
     text-align: center;
     transform: translateY(-55%) rotate(-5deg);
+    opacity: 0;
+    user-select: none;
+    animation: fade-in 1s ease .5s 1 forwards;
 }
 .curtains-block__right p {
     position: absolute;
     top: 50%;
     left: 0;
     width: 100%;
-    font-size: 4.5vw;
+    font-size: 5vw;
     text-align: center;
     transform: translateY(-55%) rotate(5deg);
+    opacity: 0;
+    user-select: none;
+    animation: fade-in 1s ease .5s 1 forwards;
 }
 
 /* Navbar */
@@ -226,10 +228,17 @@ a:hover {
     font-size: var(--font-size-desktop-lg);
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .info-block__description {
-    font-size: var(--font-size-desktop-md);
+    font-size: var(--font-size-desktop-sm);
+}
+.info-block__description a {
+    text-decoration: none;
+    transition: opacity .2 ease-in-out;
+}
+.info-block__description a:hover {
+    opacity: .8;
 }
 
 /* Our story */
@@ -286,9 +295,14 @@ a:hover {
     font-size: var(--font-size-desktop-sm);
     text-align: center;
     margin-top: 10px;
+    user-select: none;
 }
 #best-moments-swiper .swiper-pagination-bullet {
-    background-color: var(--theme-color-secondary);
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    transition: background-color .15s ease-in-out;
+    border: 1px solid var(--theme-color-secondary-dark);
 }
 #best-moments-swiper .swiper-pagination-bullet-active {
     background-color: var(--theme-color-secondary-dark);
@@ -325,6 +339,25 @@ a:hover {
     }
     #travel-sprite-animation {
         margin-bottom: -50%;
+    }
+    .info-block {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .info-block:last-child {
+        margin-bottom: 0;
+    }
+    .info-block__title {
+        font-size: var(--font-size-mobile-lg);
+    }
+    .info-block__description {
+        font-size: var(--font-size-mobile-sm);
+    }
+    .our-story__text-box {
+        margin-top: 0;
+    }
+    .best-moments__title {
+        margin-top: 15px;
     }
 }
 @media (max-width: 575px) {
