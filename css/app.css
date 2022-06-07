@@ -235,7 +235,7 @@ a:hover {
 }
 .info-block__description a {
     text-decoration: none;
-    transition: opacity .2 ease-in-out;
+    transition: opacity .2s ease-in-out;
 }
 .info-block__description a:hover {
     opacity: .8;
@@ -444,13 +444,22 @@ a:hover {
         font-size: var(--font-size-mobile-lg);
     }
     .info-block__description {
-        font-size: var(--font-size-mobile-sm);
+        font-size: var(--font-size-mobile-md);
     }
     .our-story__text-box {
         margin-top: 0;
     }
     .best-moments__title {
         margin-top: 45px;
+    }
+    .our-story__description {
+        font-size: var(--font-size-mobile-md);
+    }
+    .contacts__left-box--name {
+        font-size: var(--font-size-mobile-lg);
+    }
+    .contacts__left-box a, .contacts__right-box a {
+        font-size: var(--font-size-mobile-md);
     }
 }
 @media (max-width: 575px) {
