@@ -12,7 +12,7 @@
     --theme-color-secondary: #ACB38F;
     --theme-color-secondary-dark: #111D13;
     --navbar-height: 60px;
-    --vertical-spacing: 60px;
+    --vertical-spacing: 75px;
 }
 
 /* Animations */
@@ -247,18 +247,19 @@ a:hover {
 }
 #travel-sprite-animation {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 0;
     height: 512px;
     width: 581px;
     background: url("../img/sprite-travel.png");
+    transform: translateY(-50%);
     animation: sprite-travel 5s steps(5) infinite;
 }
 .our-story__text-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 512px;
+    height: 562px;
 }
 .our-story__title {
     font-family: var(--font-family-secondary);
@@ -267,7 +268,7 @@ a:hover {
     margin-bottom: 15px;
 }
 .our-story__description {
-    font-size: var(--font-size-desktop-md);
+    font-size: var(--font-size-desktop-sm);
 }
 
 /* Best moments */
@@ -327,6 +328,7 @@ a:hover {
     }
     #travel-sprite-animation {
         position: relative;
+        top: unset;
         right: unset;
         margin-left: 50%;
         margin-bottom: -35%;
@@ -343,6 +345,9 @@ a:hover {
     .info-block {
         margin-top: 0;
         margin-bottom: 20px;
+    }
+    .info-block:first-child {
+        margin-top: -20px;
     }
     .info-block:last-child {
         margin-bottom: 0;
