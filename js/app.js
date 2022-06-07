@@ -28,6 +28,11 @@ const navbarHandler = () => {
     }
   }
 
+  // Make last section active if bottom is reached
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    activeSectionIndex = navigationAnchorPointCollection.length - 1;
+  }
+
   navLinkCollection[activeSectionIndex].classList.add("active");
 };
 
