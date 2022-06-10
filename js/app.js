@@ -19,7 +19,6 @@ const navbarHandler = () => {
   let activeSectionIndex = 0;
 
   for (let i = 0; i < navigationAnchorPointCollection.length; i++) {
-    navLinkCollection[i].classList.remove("active");
     if (
       navigationAnchorPointCollection[i].getBoundingClientRect().top <
       window.innerHeight / 4
@@ -33,7 +32,13 @@ const navbarHandler = () => {
     activeSectionIndex = navigationAnchorPointCollection.length - 1;
   }
 
-  navLinkCollection[activeSectionIndex].classList.add("active");
+  for (let i = 0; i < navLinkCollection.length; i++) {
+    if (i === activeSectionIndex) {
+      navLinkCollection[i].classList.add("active");
+    } else {
+      navLinkCollection[i].classList.remove("active");
+    }
+  }
 };
 
 const initBestMomentsSwiper = () => {
