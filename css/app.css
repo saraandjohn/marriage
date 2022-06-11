@@ -591,7 +591,7 @@ a:hover {
         font-size: var(--font-size-mobile-lg);
     }
     .play-with-us__game-description {
-        font-size: var(--font-size-mobile-lg);
+        font-size: var(--font-size-mobile-md);
     }
     .play-with-us__game-questions-container {
         font-size: var(--font-size-mobile-md);
