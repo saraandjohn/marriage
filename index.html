@@ -46,7 +46,7 @@
 			<section id="hero" class="col-12 px-0">
 				<picture>
 					<source media="(max-width: 991px)" srcset="img/hero-mobile.jpg">
-					<img src="img/hero-desktop.jpg" class="d-block w-100" alt="Sara e John">
+					<img src="img/hero-desktop.jpg" class="d-block w-100" alt="Sara e Jonathan">
 				</picture>
 				<div class="curtains-block">
 					<div class="curtains-block__left">
@@ -142,8 +142,35 @@
 			</section>
 			<section id="play-with-us" class="col-12 navigation-anchor-point">
 				<h2 class="play-with-us__title">Gioca con gli sposi</h2>
-				<p style="height: 300px;"></p>
+				<div id="play-with-us__container" class="container">
+					<h3 class="play-with-us__game-title">Quanto conosci gli sposi?</h3>
+					<p class="play-with-us__game-decription">Leggi la domanda e clicca sulla faccia corretta!</p>
+					<div class="play-with-us__box">
+						<div class="play-with-us__game-questions-container">
+							<div id="game-counter-container"><span id="game-counter">0</span>/10</div>
+							<button id="game-start">INIZIA IL QUIZ!</button>
+							<p id="game-question" class="d-none"></p>
+							<p id="game-correct" class="d-none">CORRETTO!</p>
+							<p id="game-wrong" class="d-none">SBAGLIATO!</p>
+							<p id="game-answer" class="d-none"></p>
+							<button id="game-next" class="d-none">PROSSIMA DOMANDA</button>
+							<p id="game-score-label" class="d-none">Hai risposto correttamente a <span id="game-score"></span> domande!</p>
+							<p id="game-score-comment-0" class="d-none">Non conosci abbastanza Sara e Jonathan, dovresti seguirli di più sui social!</p>
+							<p id="game-score-comment-1" class="d-none">Quasi la sufficienza, studia un po' di più prima del matrimonio!</p>
+							<p id="game-score-comment-2" class="d-none">Niente male, ma per raggiungere la perfezione manca ancora qualcosa!</p>
+							<p id="game-score-comment-3" class="d-none">Complimenti, sai praticamente tutto di noi! Però adesso smettila di spiarci!</p>
+						</div>
+						<div class="play-with-us__game-faces-container">
+							<img id="game-face-sara" class="play-with-us__game-face disabled" src="img/face-sara.jpg" alt="Sara" title="Sara" />
+							<img class="play-with-us__game-icon" src="img/question-mark.png" alt="Quiz!" title="Sara" height="55" width="55" />
+							<img id="game-face-jonathan" class="play-with-us__game-face disabled" src="img/face-jonathan.jpg" alt="Jonathan" title="Jonathan" />
+						</div>
+					</div>
+				</div>
 			</section>
+
+			<div class="section-separator"></div>
+
 			<section id="contacts" class="col-12 navigation-anchor-point">
 				<h2 class="contacts__title">Contatti</h2>
 				<div class="row justify-content-center">
