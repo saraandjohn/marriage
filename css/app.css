@@ -341,7 +341,7 @@ a:hover {
     margin-top: 40px;
     margin-bottom: 5px;
 }
-.play-with-us__game-decription {
+.play-with-us__game-description {
     font-family: var(--font-family-main);
     font-size: var(--font-size-desktop-md);
     text-align: center;
@@ -586,6 +586,12 @@ a:hover {
     }
     .contacts__left-box a, .contacts__right-box a {
         font-size: var(--font-size-mobile-md);
+    }
+    .play-with-us__game-title {
+        font-size: var(--font-size-mobile-lg);
+    }
+    .play-with-us__game-description {
+        font-size: var(--font-size-mobile-lg);
     }
     .play-with-us__game-questions-container {
         font-size: var(--font-size-mobile-md);
