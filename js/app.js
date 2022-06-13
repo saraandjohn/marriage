@@ -104,7 +104,7 @@ const gameData = [
   },
   {
     question:
-      "Chi, mentre giocava a nascondino, è stato fermato dalla polizia?",
+      "Chi, giocando a nascondino, si è nascosto così bene che è stato necessario chiamare la polizia per trovarlo?",
     id: "j",
     answer: "Un vero nemico pubblico",
   },
