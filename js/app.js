@@ -166,7 +166,7 @@ const game = {
       document.getElementById("game-face-jonathan").classList.add("correct");
     }
 
-    if (id === game.shuffledGameData[game.currentIndex].id) {
+    if (game.shuffledGameData[game.currentIndex].id === id) {
       game.score += 1;
       document.getElementById("game-correct").classList.remove("d-none");
     } else {
