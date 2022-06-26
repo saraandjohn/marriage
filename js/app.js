@@ -67,64 +67,125 @@ const navbarHandler = () => {
 // Game
 const gameData = [
   {
-    question: "Chi ha fatto irruzione in un liceo di notte?",
     id: "s",
-    answer: "Jon non ci andava né di giorno né di notte",
+    it: {
+      question: "Chi ha fatto irruzione in un liceo di notte?",
+      answer: "Jon non ci andava né di giorno né di notte",
+    },
+    fr: {
+      question: "Qui est entré dans le lycée la nuit?",
+      answer: "Jon n'y allait ni la journée ni la nuit",
+    },
   },
   {
-    question: "Chi parlava con i peluche al centro commerciale?",
     id: "s",
-    answer: "Sara è ormai bandita dai centri commerciali",
+    it: {
+      question: "Chi parlava con i peluche al centro commerciale?",
+      answer: "Sara è ormai bandita dai centri commerciali",
+    },
+    fr: {
+      question: "Qui parlait avec les peluche dans le centre commerciale?",
+      answer: "Sara est désormais interdite de centre commercial",
+    },
   },
   {
-    question: "Chi dorme 9 ore a notte?",
     id: "s",
-    answer: "Jon ritiene che la notte sia fatta per guardare l'NBA",
+    it: {
+      question: "Chi dorme 9 ore a notte?",
+      answer: "Jon ritiene che la notte sia fatta per guardare l’NBA",
+    },
+    fr: {
+      question: "Qui doit dormir 9 heures par nuit?",
+      answer: 'Jon: "La nuit est faite pour regarder la NBA"',
+    },
   },
   {
-    question:
-      "Chi è partito per un viaggio portandosi dietro la valigia sbagliata?",
     id: "s",
-    answer: "Grazie papà per avermi poi portato la valigia giusta",
+    it: {
+      question:
+        "Chi è partito per un viaggio portandosi dietro la valigia sbagliata?",
+      answer: "Grazie papà per avermi poi portato la valigia giusta",
+    },
+    fr: {
+      question: "Qui est parti en voyage en se trompant de valise?",
+      answer: "Merci papa de m'avoir ramener la bonne valise",
+    },
   },
   {
-    question: "Chi è stato morso da una scimmia?",
     id: "s",
-    answer: "E no, la scimmia non era Jonathan",
+    it: {
+      question: "Chi è stato morso da una scimmia?",
+      answer: "E no, la scimmia non era Jonathan",
+    },
+    fr: {
+      question: "Qui a été mordu par une singe?",
+      answer: "Ce n'était pas Jon le singe",
+    },
   },
   {
-    question: "Chi ha fatto un buco nel muro con un pugno?",
     id: "j",
-    answer: "Papà, mamma, scusate",
+    it: {
+      question: "Chi ha fatto un buco nel muro con un pugno?",
+      answer: "Papà, mamma, scusate",
+    },
+    fr: {
+      question: "Qui a fait un trou dans le mur?",
+      answer: "Papa maman désolé",
+    },
   },
   {
-    question: "Chi ha un tatuaggio?",
     id: "j",
-    answer: "Spetta a te scoprire dove",
+    it: {
+      question: "Chi ha un tatuaggio?",
+      answer: "Spetta a te scoprire dove",
+    },
+    fr: {
+      question: "Qui a un tatouage?",
+      answer: "À toi de découvrir ou",
+    },
   },
   {
-    question:
-      "Chi, giocando a nascondino, si è nascosto così bene che è stato necessario chiamare la polizia per trovarlo?",
     id: "j",
-    answer: "Un vero nemico pubblico",
+    it: {
+      question:
+        "Chi, giocando a nascondino, si è nascosto così bene che è stato necessario chiamare la polizia per trovarlo?",
+      answer: "Un vero nemico pubblico",
+    },
+    fr: {
+      question: "Qui a fait un cache cache qui a nécessité l'aide de la police",
+      answer: "Ennemi public numero 1",
+    },
   },
   {
-    question: "Chi detiene il record di 7 pinte bevute in una sera sola?",
     id: "j",
-    answer: "Sara al massimo si è fermata alla quarta",
+    it: {
+      question: "Chi detiene il record di 7 pinte bevute in una sera sola?",
+      answer: "Sara al massimo si è fermata alla quarta",
+    },
+    fr: {
+      question: "Qui a bu 7 pintes?",
+      answer: "Sara n'en est qu'à 4",
+    },
   },
   {
-    question:
-      "Chi ha perso il pullman per ritornare a casa dopo un weekend nella città dell'altro?",
     id: "j",
-    answer:
-      "Da quel giorno Sara controlla sempre in anticipo i biglietti di Jonathan",
+    it: {
+      question:
+        "Chi ha perso il pullman per ritornare a casa dopo un weekend nella città dell’altro?",
+      answer:
+        "Da quel giorno Sara controlla sempre in anticipo i biglietti di Jonathan",
+    },
+    fr: {
+      question: "Qui a raté le bus pour rentrer dans son pays?",
+      answer: "Sara contrôle désormais tout les billets pour Jon",
+    },
   },
 ];
 const game = {
   shuffledGameData: arrayHandler.shuffle(gameData),
   currentIndex: 0,
   score: 0,
+  lang: document.documentElement.lang,
   getQuestion: (index) => {
     document.getElementById("game-counter").innerHTML = game.currentIndex + 1;
     document.getElementById("game-start").classList.add("d-none");
@@ -141,9 +202,9 @@ const game = {
     document.getElementById("game-next").classList.add("d-none");
 
     document.getElementById("game-question").innerText =
-      game.shuffledGameData[index].question;
+      game.shuffledGameData[index][game.lang].question;
     document.getElementById("game-answer").innerText =
-      game.shuffledGameData[index].answer;
+      game.shuffledGameData[index][game.lang].answer;
   },
   start: () => {
     game.getQuestion(0);

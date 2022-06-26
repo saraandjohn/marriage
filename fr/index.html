@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<!--
+⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+⣿⣿⣿⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⡇
+⣿⣿⣿⣿⠀⠀⠀⠈⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠁⢀⣿⣿
+⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠙⠿⠿⠿⠻⠿⠿⠟⠿⠛⠉⠀⠀⠀⠀⠀⣸⣿⣿⣿
+⣿⣿⣿⣿⣿⣷⣄⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣴⣿⣿⣿⣿⣿⣿⡇
+⣿⣿⣿⣿⣿⣿⡟⠀⠀⢰⣹⡆⠀⠀⠀⠀⠀⠀⣭⣷⠀⠀⠀⠸⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⠃⠀⠀⠈⠉⠀⠀⠤⠄⠀⠀⠀⠉⠁⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⢾⣿⣷⠀⠀⠀⠀⡠⠤⢄⠀⠀⠀⠠⣿⣿⣷⠀⢸⣿⣿⣿⣿⡇
+⣿⣿⣿⣿⣿⣿⡀⠉⠀⠀⠀⠀⠀⢄⠀⢀⠀⠀⠀⠀⠉⠉⠁⠀⠀⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣿⣿⡇
+⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⡇
+-->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
+
+	<meta name="title" content="Sara & Jonathan">
+	<meta name="description" content="6 octobre 2022">
+	<meta name="url" content="">
+	<meta name="robots" content="noindex">
+
+	<meta property="og:title" content="Sara & Jonathan">
+	<meta property="og:description" content="6 octobre 2022">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+
+	<meta name="twitter:title" content="Sara & Jonathan">
+	<meta name="twitter:description" content="6 octobre 2022">
+	<meta name="twitter:image" content="">
+
+	<title>Sara & Jonathan</title>
+
+	<link rel="icon" sizes="16x16" href="../favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+	<main class="container-fluid">
+		<div class="row">
+			<section id="hero" class="col-12 px-0">
+				<picture>
+					<source media="(max-width: 991px)" srcset="img/hero-mobile.jpg">
+					<img src="../img/hero-desktop.jpg" class="d-block w-100" alt="Sara e Jonathan">
+				</picture>
+				<div class="curtains-block">
+					<div class="curtains-block__left">
+						<p>Sara<br />&<br />Jonathan</p>
+					</div>
+					<div class="curtains-block__right">
+						<p>6<br />octobre<br />2022</p>
+					</div>
+				</div>
+			</section>
+			<nav id="navbar" class="navbar sticky-top lbn-navbar">
+				<div class="lbn-navbar__container">
+					<ul>
+						<li class="lbn-navbar-link-block">
+							<a href="#info">Info</a>
+						</li>
+						<li class="lbn-navbar-link-block">
+							<a href="#our-story">Notre histoire</a>
+						</li>
+						<li class="lbn-navbar-link-block">
+							<a href="#play-with-us">Jouez avec les mariés</a>
+						</li>
+						<li class="lbn-navbar-link-block">
+							<a href="#contacts">Contacts</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<section id="info" class="col-12 navigation-anchor-point">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-4 col-xl-3 info-block">
+						<img src="../img/icons/calendar.svg" class="info-block__icon" alt="Date" height="60">
+						<p class="info-block__title"><em>Le grand jour</em></p>
+						<p class="info-block__description">Jeudi 6 octobre 2022</p>
+					</div>
+					<div class="col-12 col-md-4 col-xl-3 info-block">
+						<img src="../img/icons/rings.svg" class="info-block__icon" alt="Cérémonie" height="60">
+						<p class="info-block__title"><em>La cérémonie</em></p>
+						<p class="info-block__description"><a href="https://www.google.com/maps/place/118+Av.+du+G%C3%A9n%C3%A9ral+de+Gaulle,+94700+Maisons-Alfort,+Francia/@48.8010598,2.4285129,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6733d9a83ba59:0xe3a186f0d6ddc94!8m2!3d48.8010563!4d2.4307069" target="_blank" rel="noopener noreferrer nofollow" title="Ouvrir dans Google Maps">11.00 heure<br />Mairie de Maisons-Alfort<br />118 Av. du Général de Gaulle,<br />94700 Maisons-Alfort<br /><img src="../img/icons/maps.svg" alt="Ouvrir dans Google Maps" width="40" /></a></p>
+					</div>
+					<div class="col-12 col-md-4 col-xl-3 info-block">
+						<img src="../img/icons/glasses.svg" class="info-block__icon" alt="Réception" height="60">
+						<p class="info-block__title"><em>La réception</em></p>
+						<p class="info-block__description"><a href="https://www.google.com/maps/place/Le+Village+De+Sully/@48.9814068,1.648526,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6b9b378c1c355:0x56036d031fc3031e!8m2!3d48.9814033!4d1.65072" target="_blank" rel="noopener noreferrer nofollow" title="Ouvrir dans Google Maps">Village de Sully<br />Rosny-sur-Seine<br /><img src="../img/icons/maps.svg" alt="Ouvrir dans Google Maps" width="40" /></a></p>
+					</div>
+				</div>
+			</section>
+			<section id="our-story" class="col-12 navigation-anchor-point">
+				<div class="row">
+					<div class="col-10 offset-1 col-lg-4 offset-lg-0 col-xxl-3 offset-xl-1 order-lg-last">
+						<div class="our-story__text-box">
+							<h2 class="our-story__title">Notre histoire</h2>
+							<p class="our-story__description">
+								En 2015 une voiture part de Paris avec Jonathan à bord. Au même moment un avion s’envole de Milan avec Sara. La destination est la même: Malaga.<br />
+								Nos chemins se croisent pour la première fois dans la célèbre boite Sala Gold et s’ensuit une semaine de vacance qu’on ne veut pas voir prendre fin.<br />
+								Cependant nous devons retourner à nos vies respectives et la distance fait qu’on décide de rester simplement amis.<br />
+								Un an plus tard Jon décide de passer un weekend à Milan. On décide de donner une chance à cet amour et c’est donc en Juillet 2016 que commence cette relation peu conventionnelle.<br />
+								Aujourd’hui, apres de nombreuses péripéties, le grand jour approche et nous sommes très heureux d’entamer ce nouveau chapitre de notre histoire avec vous.
+							</p>
+						</div>
+					</div>
+					<div class="col-10 offset-1 col-lg-7 offset-lg-0 col-xl-6 position-relative">
+						<div id="travel-sprite-animation">
+					</div>
+				</div>
+			</section>
+			<section id="best-moments" class="col-12 px-0">
+				<h2 class="best-moments__title">Nos meileurs moments</h2>
+				<div id="best-moments-swiper" class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="../img/swiper/01.jpg" class="d-block w-100" alt="French Kiss" loading="lazy">
+							<p class="caption">“French Kiss”</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="../img/swiper/02.jpg" class="d-block w-100" alt="Partner in crime" loading="lazy">
+							<p class="caption">“Partner in crime”</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="../img/swiper/03.jpg" class="d-block w-100" alt="Two heads one heart" loading="lazy">
+							<p class="caption">“Two heads one heart”</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="../img/swiper/04.jpg" class="d-block w-100" alt="Vitamin Sea" loading="lazy">
+							<p class="caption">“Vitamin Sea”</p>
+						</div>
+						<div class="swiper-slide">
+							<img src="../img/swiper/05.jpg" class="d-block w-100" alt="We believe we can fly" loading="lazy">
+							<p class="caption">“We believe we can fly”</p>
+						</div>
+					</div>
+				<div class="swiper-pagination"></div>
+				</div>
+			</section>
+			<section id="play-with-us" class="col-12 navigation-anchor-point">
+				<h2 class="play-with-us__title">Jouez avec les mariés</h2>
+				<div id="play-with-us__container" class="container">
+					<h3 class="play-with-us__game-title">Connessez-vous les mariés?</h3>
+					<p class="play-with-us__game-description">Lisez la question et cliquez sur le bon visage!</p>
+					<div class="play-with-us__box">
+						<div class="play-with-us__game-questions-container">
+							<div id="game-counter-container"><span id="game-counter">0</span>/10</div>
+							<button id="game-start">COMMENCER!</button>
+							<p id="game-question" class="d-none"></p>
+							<p id="game-correct" class="d-none">BONNE!</p>
+							<p id="game-wrong" class="d-none">MAUVAISE!</p>
+							<p id="game-answer" class="d-none"></p>
+							<button id="game-next" class="d-none">PROCHAINE QUESTION</button>
+							<p id="game-score-label" class="d-none">Vous avez répondu correctement à <span id="game-score"></span> questions!</p>
+							<p id="game-score-comment-0" class="d-none">Vous ne nous connaissez pas, votre invitation au mariage est remise en question!</p>
+							<p id="game-score-comment-1" class="d-none">Presque la moyenne, travailler le sujet un peu plus avant le mariage!</p>
+							<p id="game-score-comment-2" class="d-none">Vous avez de bonnes bases mais ce n’est pas encore parfait!</p>
+							<p id="game-score-comment-3" class="d-none">Bravo mais arrêtez de nous espionner!</p>
+						</div>
+						<div class="play-with-us__game-faces-container">
+							<img id="game-face-sara" class="play-with-us__game-face disabled" src="../img/face-sara.jpg" alt="Sara" title="Sara" />
+							<img class="play-with-us__game-icon" src="../img/question-mark.png" alt="Quiz!" title="Sara" height="55" width="55" />
+							<img id="game-face-jonathan" class="play-with-us__game-face disabled" src="../img/face-jonathan.jpg" alt="Jonathan" title="Jonathan" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="section-separator"></div>
+
+			<section id="contacts" class="col-12 navigation-anchor-point">
+				<h2 class="contacts__title">Contacts</h2>
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-6 col-xl-4 contacts__left-box"><p class="contacts__left-box--name">Sara</p><p><a href="tel:+393384191824">+39 338 419 1824</a></p></div>
+					<div class="col-12 col-md-6 col-xl-4 contacts__right-box"><p class="contacts__left-box--name">Jonathan</p><p><a href="tel:+33767648408">+33 7 67 64 84 08</a><br />(indisponible le 05/10)</p></div>
+				</div>
+			</section>
+			<div class="col-12 px-0">
+				<img src="../img/icons/chevron-up.svg" id="back-to-top" class="back-to-top" alt="Haut de page">
+
+				<img src="../img/skyline.png" id="skyline-picture" class="d-block w-100" alt="Milan et Paris" loading="lazy" />
+			</div>
+		</div>
+	</main>
+	<footer>
+		<!-- Custom JS -->
+		<script src="../js/swiper-bundle.min.js"></script>
+		<script src="../js/app.js"></script>
+	</footer>
+</body>

@@ -89,6 +89,35 @@ a:hover {
     margin: 0 auto;
 }
 
+/* Select language */
+#lang-select-container {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#lang-select-container h1 {
+    font-size: clamp(28px, 4vw, 60px);
+    font-weight: 400;
+}
+#lang-select-container p {
+    font-size: clamp(32px, 4.2vw, 64px);
+    font-weight: 400;
+}
+#lang-select-container p {
+    transition: transform .2s ease-in-out;
+}
+#lang-select-container p:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+#lang-select-container p a {
+    text-decoration: none;
+}
+
 /* Hero */
 #hero {
     position: relative;
@@ -411,6 +440,9 @@ a:hover {
 #game-start:hover, #game-next:hover {
     color: var(--theme-color-secondary);
     background-color: #fff;
+}
+#game-correct, #game-wrong {
+    font-weight: 400;
 }
 #game-next {
     margin-top: 25px;
