@@ -571,6 +571,9 @@ a:hover {
     .best-moments__title {
         margin-top: 45px;
     }
+    #best-moments-swiper .swiper-slide .caption {
+        font-size: var(--font-size-mobile-md);
+    }
     .our-story__description {
         font-size: var(--font-size-mobile-md);
     }
