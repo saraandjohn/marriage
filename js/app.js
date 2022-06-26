@@ -196,7 +196,6 @@ const game = {
           .classList.remove("d-none");
       }
       document.getElementById("game-score-label").classList.remove("d-none");
-      document.getElementById("game-score-comment").classList.remove("d-none");
     }
   },
   next: () => {
