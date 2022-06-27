@@ -243,6 +243,7 @@ a:hover {
 }
 .lbn-navbar__container ul li a {
     font-size: var(--font-size-desktop-md);
+    line-height: 1.1;
     color: var(--theme-color-main);
     text-decoration: none;
 }
