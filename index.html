@@ -64,11 +64,24 @@
 	<main class="container-fluid">
 		<div class="row">
 			<section class="col-12">
-				<div id="lang-select-container">
-					<h1 class="mb-4 mb-lg-5">Select language</h1>
-					<div>
-						<p class="d-inline-block mx-4"><a class=" p-4" href="it" title="Italiano">🍕</a></p>
-						<p class="d-inline-block mx-4"><a class=" p-4" href="fr" title="Français">🥖</a></p>
+				<div class="row justify-content-center lang-selection">
+					<img class="col p-0 lang-selection__top-picture" src="img/lang-selection-top.jpg" alt="Sara and Jonathan">
+					<img class="col p-0 lang-selection__bottom-picture" src="img/lang-selection-bottom.jpg" alt="Sara and Jonathan">
+					<div class="col position-relative">
+						<div class="lang-selection__card ms-auto me-0 border rounded bg-white">
+							<a href="it" title="Italiano">
+								<p class="d-block w-100 text-center pt-5 pe-xl-2">Sono italiano/a</p>
+								<img class="d-block pt-3 pb-5 mx-auto" src="img/pizza.png" alt="Italiano">
+							</a>
+						</div>
+					</div>
+					<div class="col position-relative">
+						<div class="lang-selection__card ms-0 me-auto border rounded bg-white">
+							<a href="fr" title="Français">
+								<p class="d-block w-100 text-center pt-5 px-2">Je suis français(e)</p>
+								<img class="d-block pt-3 pb-5 mx-auto" src="img/baguette.png" alt="Français">
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
