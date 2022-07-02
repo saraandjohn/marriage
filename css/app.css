@@ -609,6 +609,7 @@ a:hover {
 @media (max-width: 767px) {
     .lang-selection__top-picture, .lang-selection__bottom-picture {
         width: unset;
+        max-width: unset;
     }
     .lang-selection__top-picture {
         height: 50vh;
