@@ -455,6 +455,9 @@ a:hover {
     text-align: center;
     margin-bottom: 55px;
 }
+#game-start-anchor-point {
+    scroll-margin: calc(var(--navbar-height) + var(--vertical-spacing)/2);
+}
 .play-with-us__box {
     position: relative;
     background-color: var(--theme-color-secondary);
@@ -465,6 +468,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+    margin-bottom: 15px;
 }
 .play-with-us__game-face {
     position: relative;
@@ -478,7 +482,7 @@ a:hover {
     user-select: none;
 }
 .play-with-us__game-face.disabled {
-    opacity: .5;
+    opacity: .35;
     pointer-events: none;
 }
 .play-with-us__game-face:hover, .play-with-us__game-face.selected {
@@ -555,6 +559,9 @@ a:hover {
     width: 90px;
     padding: 5px 12px;
     transform: translate(-50%, -50%);
+}
+.game-score-comment {
+    margin-bottom: 25px;
 }
 
 /* Contacts */
