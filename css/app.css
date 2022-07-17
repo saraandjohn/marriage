@@ -20,6 +20,19 @@
     from {opacity: 0;}
     to {opacity: 1;}
 }
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 10px);
+    }
+}
 @keyframes sprite-travel {
     from { background-position: 0px; }
     to { background-position: -2905px; }
@@ -221,6 +234,40 @@ a:hover {
     opacity: 0;
     user-select: none;
     animation: fade-in 1s ease .5s 1 forwards;
+}
+.mouse-down {
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    z-index: 2;
+}
+.mouse-down::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    background-color: white;
+    border-radius: 4px;
+    transform: translate(-50%, 0);
+    animation: scroll-down 2s infinite;
+    z-index: 2;
+}
+.mouse-down::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30px;
+    width: 20px;
+    border: 1px solid white;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
 }
 
 /* Navbar */
