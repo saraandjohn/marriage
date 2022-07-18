@@ -167,25 +167,25 @@
 				<div id="play-with-us__container" class="container">
 					<h3 class="play-with-us__game-title">Connessez-vous les mariés?</h3>
 					<p class="play-with-us__game-description">Lisez la question et cliquez sur le bon visage!</p>
-					<div class="play-with-us__box">
+					<div id="game-start-anchor-point" class="play-with-us__box">
 						<div class="play-with-us__game-questions-container">
 							<div id="game-counter-container"><span id="game-counter">0</span>/10</div>
-							<button id="game-start">COMMENCER!</button>
+							<a href="#game-start-anchor-point"><button id="game-start">COMMENCER!</button></a>
 							<p id="game-question" class="d-none"></p>
+							<div class="play-with-us__game-faces-container">
+								<img id="game-face-sara" class="play-with-us__game-face disabled" src="https://saraandjon.com/img/face-sara.jpg" alt="Sara" title="Sara" />
+								<img class="play-with-us__game-icon" src="https://saraandjon.com/img/question-mark.png" alt="Quiz!" title="Sara" height="55" width="55" />
+								<img id="game-face-jonathan" class="play-with-us__game-face disabled" src="https://saraandjon.com/img/face-jonathan.jpg" alt="Jonathan" title="Jonathan" />
+							</div>
 							<p id="game-correct" class="d-none">BONNE!</p>
 							<p id="game-wrong" class="d-none">MAUVAISE!</p>
 							<p id="game-answer" class="d-none"></p>
 							<button id="game-next" class="d-none">PROCHAINE QUESTION</button>
 							<p id="game-score-label" class="d-none">Vous avez répondu correctement à <span id="game-score"></span> questions!</p>
-							<p id="game-score-comment-0" class="d-none">Vous ne nous connaissez pas, votre invitation au mariage est remise en question!</p>
-							<p id="game-score-comment-1" class="d-none">Presque la moyenne, travailler le sujet un peu plus avant le mariage!</p>
-							<p id="game-score-comment-2" class="d-none">Vous avez de bonnes bases mais ce n’est pas encore parfait!</p>
-							<p id="game-score-comment-3" class="d-none">Bravo mais arrêtez de nous espionner!</p>
-						</div>
-						<div class="play-with-us__game-faces-container">
-							<img id="game-face-sara" class="play-with-us__game-face disabled" src="https://saraandjon.com/img/face-sara.jpg" alt="Sara" title="Sara" />
-							<img class="play-with-us__game-icon" src="https://saraandjon.com/img/question-mark.png" alt="Quiz!" title="Sara" height="55" width="55" />
-							<img id="game-face-jonathan" class="play-with-us__game-face disabled" src="https://saraandjon.com/img/face-jonathan.jpg" alt="Jonathan" title="Jonathan" />
+							<p id="game-score-comment-0" class="d-none game-score-comment">Vous ne nous connaissez pas, votre invitation au mariage est remise en question!</p>
+							<p id="game-score-comment-1" class="d-none game-score-comment">Presque la moyenne, travailler le sujet un peu plus avant le mariage!</p>
+							<p id="game-score-comment-2" class="d-none game-score-comment">Vous avez de bonnes bases mais ce n’est pas encore parfait!</p>
+							<p id="game-score-comment-3" class="d-none game-score-comment">Bravo mais arrêtez de nous espionner!</p>
 						</div>
 					</div>
 				</div>
