@@ -73,7 +73,7 @@ const gameData = [
       answer: "Jon non ci andava né di giorno né di notte",
     },
     fr: {
-      question: "Qui est entré dans le lycée la nuit ?",
+      question: "Qui est entré dans le lycée la nuit&nbsp;?",
       answer: "Jon n'y allait ni la journée ni la nuit",
     },
   },
@@ -84,7 +84,8 @@ const gameData = [
       answer: "Sara è ormai bandita dai centri commerciali",
     },
     fr: {
-      question: "Qui parlait avec les peluches dans le centre commerciale ?",
+      question:
+        "Qui parlait avec les peluches dans le centre commerciale&nbsp;?",
       answer: "Sara est désormais interdite de centre commercial",
     },
   },
@@ -95,7 +96,7 @@ const gameData = [
       answer: "Jon ritiene che la notte sia fatta per guardare l’NBA",
     },
     fr: {
-      question: "Qui doit dormir 9 heures par nuit ?",
+      question: "Qui doit dormir 9 heures par nuit&nbsp;?",
       answer: 'Jon : "La nuit est faite pour regarder la NBA"',
     },
   },
@@ -107,7 +108,7 @@ const gameData = [
       answer: "Grazie papà per avermi poi portato la valigia giusta",
     },
     fr: {
-      question: "Qui est parti en voyage en se trompant de valise ?",
+      question: "Qui est parti en voyage en se trompant de valise&nbsp;?",
       answer: "Merci papa de m'avoir ramené la bonne valise",
     },
   },
@@ -118,7 +119,7 @@ const gameData = [
       answer: "E no, la scimmia non era Jonathan",
     },
     fr: {
-      question: "Qui a été mordu par un singe ?",
+      question: "Qui a été mordu par un singe&nbsp;?",
       answer: "Ce n'était pas Jon le singe",
     },
   },
@@ -129,7 +130,7 @@ const gameData = [
       answer: "Papà, mamma, scusate",
     },
     fr: {
-      question: "Qui a fait un trou dans le mur ?",
+      question: "Qui a fait un trou dans le mur&nbsp;?",
       answer: "Papa maman désolé",
     },
   },
@@ -140,7 +141,7 @@ const gameData = [
       answer: "Spetta a te scoprire dove",
     },
     fr: {
-      question: "Qui a un tatouage ?",
+      question: "Qui a un tatouage&nbsp;?",
       answer: "À toi de découvrir où",
     },
   },
@@ -153,7 +154,7 @@ const gameData = [
     },
     fr: {
       question:
-        "Qui a fait un cache cache qui a nécessité l'aide de la police ?",
+        "Qui a fait un cache cache qui a nécessité l'aide de la police&nbsp;?",
       answer: "Ennemi public numéro 1",
     },
   },
@@ -164,7 +165,7 @@ const gameData = [
       answer: "Sara al massimo si è fermata alla quarta",
     },
     fr: {
-      question: "Qui a bu 7 pintes ?",
+      question: "Qui a bu 7 pintes&nbsp;?",
       answer: "Sara n'en est qu'à 4",
     },
   },
@@ -177,7 +178,7 @@ const gameData = [
         "Da quel giorno Sara controlla sempre in anticipo i biglietti di Jonathan",
     },
     fr: {
-      question: "Qui a raté le bus pour rentrer dans son pays ?",
+      question: "Qui a raté le bus pour rentrer dans son pays&nbsp;?",
       answer: "Sara contrôle désormais tous les billets pour Jon",
     },
   },
@@ -188,7 +189,7 @@ const game = {
   score: 0,
   lang: document.documentElement.lang,
   getQuestion: (index) => {
-    document.getElementById("game-counter").innerHTML = game.currentIndex + 1;
+    document.getElementById("game-counter").innerText = game.currentIndex + 1;
     document.getElementById("game-start").classList.add("d-none");
     document.getElementById("game-question").classList.remove("d-none");
     document.getElementById("game-answer").classList.add("d-none");
@@ -202,9 +203,9 @@ const game = {
     document.getElementById("game-wrong").classList.add("d-none");
     document.getElementById("game-next").classList.add("d-none");
 
-    document.getElementById("game-question").innerText =
+    document.getElementById("game-question").innerHTML =
       game.shuffledGameData[index][game.lang].question;
-    document.getElementById("game-answer").innerText =
+    document.getElementById("game-answer").innerHTML =
       game.shuffledGameData[index][game.lang].answer;
   },
   start: () => {
