@@ -673,10 +673,10 @@ a:hover {
         height: 50vh;
     }
     .lang-selection__top-picture {
-        animation: language-selection-top-picture 60s linear infinite;
+        animation: language-selection-top-picture 55s linear infinite;
     }
     .lang-selection__bottom-picture {
-        animation: language-selection-bottom-picture 60s linear infinite;
+        animation: language-selection-bottom-picture 55s linear infinite;
     }
     .lbn-navbar__container ul li a {
         font-size: var(--font-size-mobile-sm);
