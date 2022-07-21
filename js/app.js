@@ -73,7 +73,7 @@ const gameData = [
       answer: "Jon non ci andava né di giorno né di notte",
     },
     fr: {
-      question: "Qui est entré dans le lycée la nuit?",
+      question: "Qui est entré dans le lycée la nuit ?",
       answer: "Jon n'y allait ni la journée ni la nuit",
     },
   },
@@ -84,7 +84,7 @@ const gameData = [
       answer: "Sara è ormai bandita dai centri commerciali",
     },
     fr: {
-      question: "Qui parlait avec les peluche dans le centre commerciale?",
+      question: "Qui parlait avec les peluches dans le centre commerciale ?",
       answer: "Sara est désormais interdite de centre commercial",
     },
   },
@@ -95,8 +95,8 @@ const gameData = [
       answer: "Jon ritiene che la notte sia fatta per guardare l’NBA",
     },
     fr: {
-      question: "Qui doit dormir 9 heures par nuit?",
-      answer: 'Jon: "La nuit est faite pour regarder la NBA"',
+      question: "Qui doit dormir 9 heures par nuit ?",
+      answer: 'Jon : "La nuit est faite pour regarder la NBA"',
     },
   },
   {
@@ -107,8 +107,8 @@ const gameData = [
       answer: "Grazie papà per avermi poi portato la valigia giusta",
     },
     fr: {
-      question: "Qui est parti en voyage en se trompant de valise?",
-      answer: "Merci papa de m'avoir ramener la bonne valise",
+      question: "Qui est parti en voyage en se trompant de valise ?",
+      answer: "Merci papa de m'avoir ramené la bonne valise",
     },
   },
   {
@@ -118,7 +118,7 @@ const gameData = [
       answer: "E no, la scimmia non era Jonathan",
     },
     fr: {
-      question: "Qui a été mordu par une singe?",
+      question: "Qui a été mordu par un singe ?",
       answer: "Ce n'était pas Jon le singe",
     },
   },
@@ -129,7 +129,7 @@ const gameData = [
       answer: "Papà, mamma, scusate",
     },
     fr: {
-      question: "Qui a fait un trou dans le mur?",
+      question: "Qui a fait un trou dans le mur ?",
       answer: "Papa maman désolé",
     },
   },
@@ -140,8 +140,8 @@ const gameData = [
       answer: "Spetta a te scoprire dove",
     },
     fr: {
-      question: "Qui a un tatouage?",
-      answer: "À toi de découvrir ou",
+      question: "Qui a un tatouage ?",
+      answer: "À toi de découvrir où",
     },
   },
   {
@@ -152,8 +152,9 @@ const gameData = [
       answer: "Un vero nemico pubblico",
     },
     fr: {
-      question: "Qui a fait un cache cache qui a nécessité l'aide de la police",
-      answer: "Ennemi public numero 1",
+      question:
+        "Qui a fait un cache cache qui a nécessité l'aide de la police ?",
+      answer: "Ennemi public numéro 1",
     },
   },
   {
@@ -163,7 +164,7 @@ const gameData = [
       answer: "Sara al massimo si è fermata alla quarta",
     },
     fr: {
-      question: "Qui a bu 7 pintes?",
+      question: "Qui a bu 7 pintes ?",
       answer: "Sara n'en est qu'à 4",
     },
   },
@@ -176,8 +177,8 @@ const gameData = [
         "Da quel giorno Sara controlla sempre in anticipo i biglietti di Jonathan",
     },
     fr: {
-      question: "Qui a raté le bus pour rentrer dans son pays?",
-      answer: "Sara contrôle désormais tout les billets pour Jon",
+      question: "Qui a raté le bus pour rentrer dans son pays ?",
+      answer: "Sara contrôle désormais tous les billets pour Jon",
     },
   },
 ];
